@@ -1,453 +1,154 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Shopify Shop erstellen lassen | OlexiyDoes — Freelancer in München</title>
-  <meta name="description" content="Professioneller Shopify-Shop zum Festpreis ab €1.200. In 2 Wochen live. Von einem Entwickler mit 15+ Jahren E-Commerce-Erfahrung. Jetzt kostenlos beraten lassen.">
-  <link rel="canonical" href="https://olexiydoes.com/">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Shopify Shop erstellen lassen | OlexiyDoes">
-  <meta property="og:description" content="Professioneller Shopify-Shop zum Festpreis. In 2 Wochen live. Jetzt kostenlos beraten lassen.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://olexiydoes.com/">
-  <meta property="og:image" content="https://olexiydoes.com/assets/og-image.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:locale" content="de_DE">
-  <meta property="og:site_name" content="OlexiyDoes">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Shopify Shop erstellen lassen | OlexiyDoes">
-  <meta name="twitter:description" content="Professioneller Shopify-Shop zum Festpreis. In 2 Wochen live.">
-  <meta name="twitter:image" content="https://olexiydoes.com/assets/og-image.jpg">
-
-  <!-- Schema.org JSON-LD -->
-  <script type="application/ld+json">
-  [
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "OlexiyDoes",
-      "description": "Professionelle Shopify-Shop-Erstellung zum Festpreis. Shopify-Freelancer in München.",
-      "url": "https://olexiydoes.com",
-      "telephone": "+4917767229 18",
-      "email": "olexiy.sokurenko@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "München",
-        "addressCountry": "DE"
-      },
-      "areaServed": "DE",
-      "priceRange": "€€",
-      "image": "https://olexiydoes.com/assets/og-image.jpg",
-      "founder": {
-        "@type": "Person",
-        "name": "Olexiy Sokurenko",
-        "jobTitle": "Shopify Freelancer & E-Commerce Entwickler"
-      }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Was kostet ein Shopify-Shop?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Meine Pakete starten bei €1.200 für einen Starter-Shop. Der genaue Preis hängt vom Umfang ab — Anzahl der Produkte, gewünschte Funktionen und Integrationen. In der kostenlosen Erstberatung klären wir das gemeinsam." }
-        },
-        {
-          "@type": "Question",
-          "name": "Wie lange dauert die Erstellung?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Je nach Paket zwischen 1 und 4 Wochen. Ein Starter-Shop ist in einer Woche fertig, komplexere Projekte brauchen 3–4 Wochen." }
-        },
-        {
-          "@type": "Question",
-          "name": "Brauche ich technische Kenntnisse?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Nein. Ich übergebe dir einen fertigen, funktionierenden Shop und zeige dir in einer persönlichen Einweisung, wie du Produkte pflegst und Bestellungen bearbeitest." }
-        },
-        {
-          "@type": "Question",
-          "name": "Was ist, wenn ich nach dem Launch Hilfe brauche?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Ich biete laufende Betreuung ab €150/Monat an — das umfasst 4 Stunden Support, kleine Anpassungen und Beratung." }
-        },
-        {
-          "@type": "Question",
-          "name": "Warum Shopify und nicht WooCommerce oder Wix?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Shopify ist die zuverlässigste E-Commerce-Plattform: Hosting, Sicherheit und Updates sind inklusive. Du kannst dich auf dein Business konzentrieren, statt dich mit Technik herumzuschlagen." }
-        },
-        {
-          "@type": "Question",
-          "name": "Kommen noch laufende Kosten dazu?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Shopify selbst kostet ab €36/Monat. Dazu kommen ggf. Kosten für Premium-Themes oder Apps. Das besprechen wir transparent in der Beratung." }
-        }
-      ]
-    }
-  ]
-  </script>
-
-  <!-- Favicon -->
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-  <!-- Navigation -->
-  <nav class="nav" id="nav">
-    <div class="nav__container">
-      <a href="#" class="nav__logo">olexiy<span>does</span></a>
-      <button class="nav__toggle" aria-label="Menü öffnen">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav__links">
-        <li><a href="#leistungen">Leistungen</a></li>
-        <li><a href="#pakete">Pakete</a></li>
-        <li><a href="#prozess">Ablauf</a></li>
-        <li><a href="#ueber">Über mich</a></li>
-        <li><a href="#kontakt" class="nav__cta">Erstberatung</a></li>
-      </ul>
-      <button class="theme-toggle" id="themeToggle" aria-label="Theme wechseln" title="Hell/Dunkel umschalten">
-        <svg class="theme-toggle__sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-        <svg class="theme-toggle__moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-      </button>
-    </div>
-  </nav>
-
-  <!-- Hero -->
-  <header class="hero" id="hero">
-    <div class="hero__container">
-      <div class="hero__badge">Shopify Partner · München</div>
-      <h1 class="hero__title">Shopify Shop erstellen lassen —<br><span>in 2 Wochen live.</span></h1>
-      <p class="hero__subtitle">Professionell eingerichtet, zum Festpreis, ohne versteckte Kosten. Von einem Entwickler mit 15+ Jahren E-Commerce-Erfahrung.</p>
-      <div class="hero__actions">
-        <a href="#kontakt" class="btn btn--primary">Kostenlose Erstberatung</a>
-        <a href="#pakete" class="btn btn--ghost">Pakete ansehen</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Olexiy Does Shopify | E-Commerce & Automatisierung aus München
+    </title>
+    <meta
+      name="description"
+      content="Professionelle Shopify-Entwicklung und E-Commerce-Automatisierung aus München. Ihr Partner für Design, Wachstum und Prozessoptimierung."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <a href="#" class="logo">Olexiy Does Shopify</a>
+        <nav class="nav">
+          <!-- Navigation links can be added here if needed, currently keeping it minimal per design -->
+          <a href="#contact" class="btn btn-primary">Kontaktieren</a>
+        </nav>
       </div>
-      <div class="hero__trust">
-        <div class="hero__trust-item">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 0L12.245 7.255H20L13.878 11.745L16.122 19L10 14.51L3.878 19L6.122 11.745L0 7.255H7.755L10 0Z" fill="currentColor"/></svg>
-          Shopify Partner
-        </div>
-        <div class="hero__trust-item">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Festpreisgarantie
-        </div>
-        <div class="hero__trust-item">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 18.333a8.333 8.333 0 100-16.666 8.333 8.333 0 000 16.666z" stroke="currentColor" stroke-width="1.5"/><path d="M10 5v5l3.333 1.667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          Lieferung in 1–4 Wochen
-        </div>
-      </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- Problem Section -->
-  <section class="problems">
-    <div class="container">
-      <p class="section-label">Das Problem</p>
-      <h2 class="section-title">Du willst online verkaufen — aber wo anfangen?</h2>
-      <div class="problems__grid">
-        <div class="problems__card">
-          <div class="problems__icon">💰</div>
-          <p>Agenturen verlangen <strong>€10.000+</strong> und brauchen Monate</p>
-        </div>
-        <div class="problems__card">
-          <div class="problems__icon">🤯</div>
-          <p>Die Technik ist überwältigend — Themes, Apps, Zahlungen, Versand</p>
-        </div>
-        <div class="problems__card">
-          <div class="problems__icon">⏰</div>
-          <p>Du willst dich auf dein Produkt konzentrieren, nicht auf Webentwicklung</p>
-        </div>
-        <div class="problems__card">
-          <div class="problems__icon">😕</div>
-          <p>Freelancer auf Plattformen — unklare Qualität und Kommunikation</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Solution / Services -->
-  <section class="services" id="leistungen">
-    <div class="container">
-      <p class="section-label">Die Lösung</p>
-      <h2 class="section-title">Alles, was dein Shop braucht — aus einer Hand</h2>
-      <div class="services__grid">
-        <div class="services__card">
-          <div class="services__card-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+    <main>
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <h1 class="hero-title">Olexiy Does Shopify</h1>
+            <p class="hero-subtitle">
+              E-Commerce & Automatisierung aus München
+            </p>
+            <a href="#contact" class="btn btn-primary">Jetzt Projekt starten</a>
           </div>
-          <h3>Shop-Einrichtung</h3>
-          <p>Theme-Auswahl und -Konfiguration, Produktpflege, Zahlungsanbieter, Versandoptionen — alles startklar.</p>
-        </div>
-        <div class="services__card">
-          <div class="services__card-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-          </div>
-          <h3>Integrationen</h3>
-          <p>Zahlungssysteme, E-Mail-Marketing, Buchhaltung, ERP — nahtlos verbunden mit deinem Business.</p>
-        </div>
-        <div class="services__card">
-          <div class="services__card-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-          </div>
-          <h3>Automatisierung</h3>
-          <p>Bestellprozesse, Benachrichtigungen, Lagerbestand — automatisiert, damit du Zeit sparst.</p>
-        </div>
-        <div class="services__card">
-          <div class="services__card-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
-          </div>
-          <h3>SEO-Grundlagen</h3>
-          <p>Suchmaschinenoptimierung von Anfang an — damit dein Shop auch gefunden wird.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Packages -->
-  <section class="packages" id="pakete">
-    <div class="container">
-      <p class="section-label">Pakete</p>
-      <h2 class="section-title">Transparente Preise. Keine Überraschungen.</h2>
-      <div class="packages__grid">
-
-        <div class="packages__card">
-          <div class="packages__header">
-            <h3>Starter</h3>
-            <div class="packages__price">€1.200</div>
-            <p class="packages__delivery">Lieferung in 1 Woche</p>
-          </div>
-          <ul class="packages__features">
-            <li>Theme-Setup &amp; Konfiguration</li>
-            <li>Bis zu 10 Produkte</li>
-            <li>Zahlungen &amp; Versand</li>
-            <li>Grundkonfiguration</li>
-            <li>Responsive Design</li>
-            <li>1 Korrekturschleife</li>
-          </ul>
-          <a href="#kontakt" class="btn btn--outline">Anfragen</a>
-        </div>
-
-        <div class="packages__card packages__card--featured">
-          <div class="packages__badge">Beliebt</div>
-          <div class="packages__header">
-            <h3>Business</h3>
-            <div class="packages__price">€2.000</div>
-            <p class="packages__delivery">Lieferung in 2 Wochen</p>
-          </div>
-          <ul class="packages__features">
-            <li>Alles aus Starter</li>
-            <li>Bis zu 25 Produkte</li>
-            <li>Theme-Anpassung</li>
-            <li>SEO-Grundlagen</li>
-            <li>E-Mail-Marketing-Setup</li>
-            <li>2 Korrekturschleifen</li>
-            <li>Einweisung (1 Std.)</li>
-          </ul>
-          <a href="#kontakt" class="btn btn--primary">Anfragen</a>
-        </div>
-
-        <div class="packages__card">
-          <div class="packages__header">
-            <h3>Premium</h3>
-            <div class="packages__price">€3.500</div>
-            <p class="packages__delivery">Lieferung in 3–4 Wochen</p>
-          </div>
-          <ul class="packages__features">
-            <li>Alles aus Business</li>
-            <li>Bis zu 50 Produkte</li>
-            <li>Erweiterte Konfiguration</li>
-            <li>Integrationen (ERP, CRM)</li>
-            <li>Automatisierung</li>
-            <li>3 Korrekturschleifen</li>
-            <li>Einweisung (2 Std.)</li>
-          </ul>
-          <a href="#kontakt" class="btn btn--outline">Anfragen</a>
-        </div>
-
-      </div>
-      <p class="packages__note">Brauchst du etwas Individuelles? <a href="#kontakt">Schreib mir für ein persönliches Angebot.</a></p>
-    </div>
-  </section>
-
-  <!-- Process -->
-  <section class="process" id="prozess">
-    <div class="container">
-      <p class="section-label">Ablauf</p>
-      <h2 class="section-title">In 4 Schritten zu deinem Shop</h2>
-      <div class="process__grid">
-        <div class="process__step">
-          <div class="process__number">01</div>
-          <h3>Erstberatung</h3>
-          <p>Wir besprechen deine Wünsche, Ziele und Zielgruppe. Kostenlos und unverbindlich — 30 Minuten.</p>
-        </div>
-        <div class="process__step">
-          <div class="process__number">02</div>
-          <h3>Angebot</h3>
-          <p>Du bekommst ein konkretes Angebot mit Festpreis. Keine Überraschungen, keine versteckten Kosten.</p>
-        </div>
-        <div class="process__step">
-          <div class="process__number">03</div>
-          <h3>Umsetzung</h3>
-          <p>Ich baue deinen Shop. Du bekommst regelmäßige Updates und kannst jederzeit Feedback geben.</p>
-        </div>
-        <div class="process__step">
-          <div class="process__number">04</div>
-          <h3>Go-Live</h3>
-          <p>Dein Shop geht live. Ich zeige dir alles, was du für den Alltag brauchst.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section class="about" id="ueber">
-    <div class="container">
-      <div class="about__grid">
-        <div class="about__image">
-          <div class="about__photo-placeholder" id="aboutPhoto">
-            <img src="assets/profile.jpg" alt="Olexiy Sokurenko — Shopify Entwickler in München" width="1184" height="864" loading="lazy">
-          </div>
-        </div>
-        <div class="about__content">
-          <p class="section-label">Über mich</p>
-          <h2 class="section-title">Hallo, ich bin Olexiy.</h2>
-          <p>Seit über 15 Jahren arbeite ich als Softwareentwickler — davon viele Jahre im E-Commerce. Ich habe an Online-Shops für Unternehmen wie OBI, Bosch Siemens und Coop mitgearbeitet (SAP Commerce Cloud).</p>
-          <p>Heute helfe ich Gründern und kleinen Unternehmen in Deutschland, ihren eigenen Shopify-Shop aufzubauen — und darüber hinaus: Landing Pages, Google Ads Kampagnen und Google Business Profile gehören ebenfalls zu meinem Angebot.</p>
-          <p>Mein Vorteil: Ich verstehe nicht nur Shopify, sondern die gesamte technische und Marketing-Landschaft dahinter. Von der Shop-Einrichtung über SEO bis zur ersten Werbekampagne — alles aus einer Hand.</p>
-          <div class="about__stats">
-            <div class="about__stat">
-              <strong>15+</strong>
-              <span>Jahre in IT</span>
-            </div>
-            <div class="about__stat">
-              <strong>E-Commerce</strong>
-              <span>SAP Commerce Cloud, Shopify</span>
-            </div>
-            <div class="about__stat">
-              <strong>München</strong>
-              <span>Vor Ort oder remote</span>
+          <div class="hero-image">
+            <div class="photo-placeholder">
+              <span>Ihr Foto</span>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <p class="section-label">FAQ</p>
-      <h2 class="section-title">Häufig gestellte Fragen</h2>
-      <div class="faq__list">
-        <details class="faq__item">
-          <summary>Was kostet ein Shopify-Shop?</summary>
-          <p>Meine Pakete starten bei €1.200 für einen Starter-Shop. Der genaue Preis hängt vom Umfang ab — Anzahl der Produkte, gewünschte Funktionen und Integrationen. In der kostenlosen Erstberatung klären wir das gemeinsam.</p>
-        </details>
-        <details class="faq__item">
-          <summary>Wie lange dauert die Erstellung?</summary>
-          <p>Je nach Paket zwischen 1 und 4 Wochen. Ein Starter-Shop ist in einer Woche fertig, komplexere Projekte brauchen 3–4 Wochen.</p>
-        </details>
-        <details class="faq__item">
-          <summary>Brauche ich technische Kenntnisse?</summary>
-          <p>Nein. Ich übergebe dir einen fertigen, funktionierenden Shop und zeige dir in einer persönlichen Einweisung, wie du Produkte pflegst und Bestellungen bearbeitest.</p>
-        </details>
-        <details class="faq__item">
-          <summary>Was ist, wenn ich nach dem Launch Hilfe brauche?</summary>
-          <p>Ich biete laufende Betreuung ab €150/Monat an — das umfasst 4 Stunden Support, kleine Anpassungen und Beratung.</p>
-        </details>
-        <details class="faq__item">
-          <summary>Warum Shopify und nicht WooCommerce oder Wix?</summary>
-          <p>Shopify ist die zuverlässigste E-Commerce-Plattform: Hosting, Sicherheit und Updates sind inklusive. Du kannst dich auf dein Business konzentrieren, statt dich mit Technik herumzuschlagen.</p>
-        </details>
-        <details class="faq__item">
-          <summary>Kommen noch laufende Kosten dazu?</summary>
-          <p>Shopify selbst kostet ab €36/Monat. Dazu kommen ggf. Kosten für Premium-Themes oder Apps. Das besprechen wir transparent in der Beratung.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section class="contact" id="kontakt">
-    <div class="container">
-      <div class="contact__grid">
-        <div class="contact__info">
-          <p class="section-label">Kontakt</p>
-          <h2 class="section-title">Lass uns über deinen Shop sprechen.</h2>
-          <p>Kostenlose Erstberatung — unverbindlich, 30 Minuten. Erzähl mir von deinem Vorhaben und ich sage dir, wie ich helfen kann.</p>
-          <div class="contact__details">
-            <a href="#" class="contact__link" id="emailLink" data-u="olexiy.sokurenko" data-d="gmail.com">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
-              <span id="emailText">[E-Mail anzeigen]</span>
-            </a>
-            <a href="#" class="contact__link" id="phoneLink" data-p="+49 177" data-s="672 29 18">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-              <span id="phoneText">[Telefon anzeigen]</span>
-            </a>
-            <div class="contact__link">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              München, Deutschland
+      <section class="services" id="services">
+        <div class="container">
+          <div class="services-grid">
+            <div class="service-card">
+              <h3>Rundum-Sorglos-Betreuung</h3>
+              <p>
+                Von der Geschäftsidee bis zum ersten Verkauf und weit darüber
+                hinaus. Ich begleite Sie ganzheitlich: beim Design, der
+                Einrichtung Ihres Produktkatalogs sowie der Konfiguration von
+                sicherem Zahlungsverkehr und Versand.
+              </p>
+            </div>
+            <div class="service-card">
+              <h3>Wachstum & Marketing</h3>
+              <p>
+                Erreichen Sie Ihre Kunden dort, wo sie sind. Mit
+                maßgeschneiderten Werbekampagnen auf Google Ads und Social Media
+                sorge ich für maximale Sichtbarkeit und steigende Umsätze für
+                Ihren Shop.
+              </p>
+            </div>
+            <div class="service-card">
+              <h3>Prozessautomatisierung</h3>
+              <p>
+                Verschwenden Sie keine Zeit mit Routineaufgaben. Durch
+                intelligente Automatisierung Ihrer Geschäftsprozesse sparen Sie
+                wertvolle Ressourcen und können schneller auf neue Marktchancen
+                reagieren.
+              </p>
             </div>
           </div>
         </div>
-        <form class="contact__form" id="contactForm" action="/api/contact" method="POST">
-          <!-- Honeypot anti-spam: invisible to users, bots fill it -->
-          <div class="contact__hp" aria-hidden="true">
-            <label for="website">Website</label>
-            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container contact-container">
+          <h2>Lassen Sie uns sprechen</h2>
+          <div class="contact-wrapper">
+            <form class="contact-form" action="#" method="POST">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Nachricht</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Senden</button>
+            </form>
+            <div class="contact-info">
+              <p id="contact-email">
+                <!-- Email projected via JS -->
+              </p>
+            </div>
           </div>
-          <div class="contact__field">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required placeholder="Dein Name">
-          </div>
-          <div class="contact__field">
-            <label for="email">E-Mail</label>
-            <input type="email" id="email" name="email" required placeholder="deine@email.de">
-          </div>
-          <div class="contact__field">
-            <label for="message">Was hast du vor?</label>
-            <textarea id="message" name="message" rows="4" placeholder="Erzähl mir kurz von deinem Projekt..."></textarea>
-          </div>
-          <button type="submit" class="btn btn--primary btn--full">Kostenlose Beratung anfragen</button>
-        </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <p>&copy; 2026 Olexiy Sokurenko. Alle Rechte vorbehalten.</p>
+        <div class="footer-links">
+          <a href="#" id="open-impressum">Impressum</a>
+          <a href="#" id="open-datenschutz">Datenschutz</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal-overlay" id="modal-impressum">
+      <div class="modal">
+        <button class="modal-close" id="close-impressum">&times;</button>
+        <div class="modal-content">
+          <h2>Impressum</h2>
+          <p>[Hier stehen die Impressumsangaben]</p>
+          <p>Olexiy Sokurenko<br />München, Deutschland</p>
+          <!-- Add full Impressum details later -->
+        </div>
       </div>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <a href="#" class="nav__logo">olexiy<span>does</span></a>
-          <p>Shopify-Shops für Gründer und kleine Unternehmen in Deutschland.</p>
+    <div class="modal-overlay" id="modal-datenschutz">
+      <div class="modal">
+        <button class="modal-close" id="close-datenschutz">&times;</button>
+        <div class="modal-content">
+          <h2>Datenschutzerklärung</h2>
+          <p>[Hier steht die Datenschutzerklärung]</p>
+          <!-- Add full Datenschutz details later -->
         </div>
-        <div class="footer__links">
-          <a href="#leistungen">Leistungen</a>
-          <a href="#pakete">Pakete</a>
-          <a href="#prozess">Ablauf</a>
-          <a href="#ueber">Über mich</a>
-          <a href="#kontakt">Kontakt</a>
-        </div>
-        <div class="footer__legal">
-          <a href="/impressum">Impressum</a>
-          <a href="/datenschutz">Datenschutz</a>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <p>&copy; 2026 OlexiyDoes. Alle Rechte vorbehalten.</p>
       </div>
     </div>
-  </footer>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
