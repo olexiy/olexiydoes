@@ -144,43 +144,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (emailLink) emailLink.addEventListener("click", handleEmailClick);
   if (phoneLink) phoneLink.addEventListener("click", handlePhoneClick);
-
-  // 6. Modals
-  const impressumBtn = document.getElementById("open-impressum");
-  const datenschutzBtn = document.getElementById("open-datenschutz");
-  const modalImpressum = document.getElementById("modal-impressum");
-  const modalDatenschutz = document.getElementById("modal-datenschutz");
-  const closeBtns = document.querySelectorAll(".modal-close");
-
-  function openModal(modal) {
-    modal.classList.add("active");
-    document.body.style.overflow = "hidden"; // Prevent scrolling
-  }
-
-  function closeModal() {
-    document
-      .querySelectorAll(".modal-overlay")
-      .forEach((m) => m.classList.remove("active"));
-    document.body.style.overflow = "";
-  }
-
-  if (impressumBtn)
-    impressumBtn.addEventListener("click", (e) => {
-      e.preventDefault();
-      openModal(modalImpressum);
-    });
-  if (datenschutzBtn)
-    datenschutzBtn.addEventListener("click", (e) => {
-      e.preventDefault();
-      openModal(modalDatenschutz);
-    });
-
-  closeBtns.forEach((btn) => btn.addEventListener("click", closeModal));
-
-  // Close modal on outside click
-  window.addEventListener("click", (e) => {
-    if (e.target.classList.contains("modal-overlay")) {
-      closeModal();
-    }
-  });
 });

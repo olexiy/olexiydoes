@@ -18,7 +18,11 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://olexiydoes.de/" />
     <meta property="og:image" content="https://olexiydoes.de/new_profile.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="de_DE" />
+    <meta property="og:site_name" content="OlexiyDoes" />
+    <link rel="canonical" href="https://olexiydoes.de/" />
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -37,6 +41,54 @@
         "priceRange": "€€",
         "telephone": "+491776722918",
         "url": "https://olexiydoes.de/"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Was kostet ein Shopify-Shop?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Die Preise starten ab €800 für ein Starter-Paket. Der genaue Preis hängt von deinen spezifischen Anforderungen ab. In der Erstberatung finden wir das richtige Paket für dich."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Wie lange dauert die Erstellung?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In der Regel 1 bis 4 Wochen, je nachdem, welches Paket du wählst und wie schnell mir Produktbilder und Texte vorliegen."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Brauche ich technische Kenntnisse?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nein. Ich übergebe dir einen voll funktionsfähigen, fertigen Shop und erkläre dir in einer Übergabe-Session ganz genau, wie du Bestellungen bearbeitest und Produkte hinzufügst."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Was ist, wenn ich nach dem Launch Hilfe brauche?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ich lasse dich nicht im Regen stehen. Auf Wunsch biete ich eine laufende technische Betreuung ab €150/Monat an, damit dein Shop immer rund läuft."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Warum Shopify und nicht WooCommerce oder Wix?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Shopify ist die weltweit zuverlässigste E-Commerce Plattform. Sie ist extrem sicher, lädt schnell, und Updates passieren im Hintergrund, ohne dass dein Shop kaputt geht. Es ist die beste Wahl für ernsthaftes E-Commerce."
+            }
+          }
+        ]
       }
     </script>
 
@@ -643,40 +695,14 @@
           </div>
         </div>
         <div class="footer-links">
-          <a href="#" id="open-impressum">Impressum</a>
-          <a href="#" id="open-datenschutz">Datenschutz</a>
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
         </div>
         <div class="footer-social">
           <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
         </div>
       </div>
     </footer>
-
-    <!-- Modals -->
-    <div class="modal-overlay" id="modal-impressum">
-      <div class="modal">
-        <button class="modal-close" id="close-impressum">
-          <i data-lucide="x"></i>
-        </button>
-        <div class="modal-content">
-          <h2>Impressum</h2>
-          <p>Olexiy Sokurenko<br />München, Deutschland</p>
-          <p>E-Mail: hallo@olexiydoes.de</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal-overlay" id="modal-datenschutz">
-      <div class="modal">
-        <button class="modal-close" id="close-datenschutz">
-          <i data-lucide="x"></i>
-        </button>
-        <div class="modal-content">
-          <h2>Datenschutzerklärung</h2>
-          <p>Hier folgt die detaillierte Datenschutzerklärung gemäß DSGVO.</p>
-        </div>
-      </div>
-    </div>
 
     <!-- Floating Action Button (FAB) -->
     <a href="#kontakt" class="fab" aria-label="Schnellanfrage stellen">
