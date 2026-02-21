@@ -26,6 +26,7 @@
     <meta property="og:locale" content="de_DE" />
     <meta property="og:site_name" content="OlexiyDoes" />
     <link rel="canonical" href="https://olexiydoes.com/" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -100,6 +101,25 @@
     <script src="assets/lucide.min.js"></script>
   </head>
   <body>
+    <!-- Fallback for users with No-JS -->
+    <noscript>
+      <div
+        style="
+          background: #ef4444;
+          color: white;
+          text-align: center;
+          padding: 10px;
+          font-weight: 500;
+          font-family: &quot;Inter&quot;, sans-serif;
+          position: relative;
+          z-index: 10000;
+        "
+      >
+        ⚠️ Bitte aktivieren Sie JavaScript, um alle Funktionen dieser Website
+        (Navigation, Dark Mode) nutzen zu können.
+      </div>
+    </noscript>
+
     <!-- HEADER -->
     <header class="header">
       <div class="container header-container">
@@ -483,13 +503,21 @@
       <section class="about section-padding" id="about">
         <div class="container">
           <div class="about-flex reveal">
-            <div class="about-image-wrapper">
-              <img
-                src="new_profile.jpg"
-                alt="Olexiy - Shopify Experte"
-                class="about-image"
-              />
-              <div class="about-decoration"></div>
+            <div class="hero__image-wrapper">
+              <picture>
+                <source srcset="new_profile.webp" type="image/webp" />
+                <img
+                  src="new_profile.jpg"
+                  alt="Olexiy Sokurenko - Shopify Freelancer München"
+                  class="hero__image"
+                  width="400"
+                  height="400"
+                  loading="eager"
+                  fetchpriority="high"
+                />
+              </picture>
+              <div class="hero__image-glow"></div>
+              <!-- Floating Badge -->
             </div>
             <div class="about-text">
               <h2>Hallo, ich bin Olexiy.</h2>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seite nicht gefunden | OlexiyDoes</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="assets/lucide.min.js"></script>
+    <style>
+      .error-page {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+      }
+      .error-code {
+        font-size: 8rem;
+        font-weight: 800;
+        color: var(--shopify-green);
+        line-height: 1;
+        margin-bottom: 20px;
+      }
+      .error-text {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="error-page">
+      <div class="error-code">404</div>
+      <h1 class="error-text">Oops! Diese Seite haben wir nicht gefunden.</h1>
+      <p
+        style="margin-bottom: 40px; color: var(--text-muted); max-width: 500px"
+      >
+        Wahrscheinlich wurde die Seite verschoben oder gelöscht. Keine Sorge,
+        auf der Startseite finden Sie alles Wichtige.
+      </p>
+      <a href="/" class="btn btn--primary">
+        Zur Startseite
+        <i data-lucide="arrow-right"></i>
+      </a>
+    </div>
+    <script>
+      lucide.createIcons();
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "dark") {
+        document.body.classList.add("dark-mode");
+      }
+    </script>
+  </body>
+</html>
