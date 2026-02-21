@@ -901,7 +901,7 @@ ul {
 .form-group textarea:focus {
   outline: none;
   border-color: var(--color-primary);
-  background: white;
+  background: var(--color-bg);
   box-shadow: 0 0 0 3px var(--color-primary-glow);
 }
 
@@ -1044,7 +1044,7 @@ ul {
     top: 70px;
     left: 0;
     right: 0;
-    background: white;
+    background: var(--color-card-bg);
     flex-direction: column;
     padding: var(--spacing-md);
     box-shadow: var(--shadow-md);
