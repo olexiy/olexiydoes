@@ -720,17 +720,21 @@ ul {
 .about-image-wrapper {
   flex: 1;
   position: relative;
+  overflow: hidden; /* crops out the scaled image watermark */
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
 }
 
 .about-image {
   width: 100%;
-  max-width: 450px;
+  height: auto; /* Fix stretching on mobile */
   aspect-ratio: 4/5;
   object-fit: cover;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
+  object-position: center 20%; /* Keep face in view */
   position: relative;
   z-index: 2;
+  transform: scale(1.08) translate(-1%, -2%); /* Pushes the bottom right watermark out of the container bounds */
+  display: block;
 }
 
 .about-decoration {
